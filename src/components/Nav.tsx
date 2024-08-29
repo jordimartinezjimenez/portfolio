@@ -1,4 +1,4 @@
-import { FaCode, FaHome, FaRegChartBar, FaRegCommentDots, FaRegUser } from "react-icons/fa"
+import { FaCode, FaHome, FaRegCommentDots, FaRegUser } from "react-icons/fa"
 
 export default function Nav() {
     return (
