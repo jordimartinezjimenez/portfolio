@@ -23,7 +23,7 @@ export default function Contact() {
                         <textarea name="message" id="message" placeholder='Your message' required className='bg-transparent border-b border-b-slate/40 p-4 rounded-xl py-3 outline-none w-full placeholder:text-slate/70 transition-all border-gray-300 mb-12 resize-none hover:border-b-4 focus:border-b-4'></textarea>
                         <input type="submit" className='bg-gradient-to-r from-rose-500 to-pink-500 rounded-lg py-1.5 px-8 cursor-pointer hover:scale-110 transition-all duration-[400ms] ease' value="Submit" />
 
-                        <input type="hidden" name="_next" value="http://localhost:5173/#contact" />
+                        <input type="hidden" name="_next" value="https://jordimartinez.netlify.app/#contact" />
                         <input type="hidden" name="_captcha" value="false" />
                     </form>
                 </div>
