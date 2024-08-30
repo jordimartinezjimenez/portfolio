@@ -22,16 +22,16 @@ export const projects: Project[] = [
         image: '/calorie-tracker.webp',
         title: 'Calorie Tracker',
         description: 'Monitor your daily calorie intake',
-        demoLink: "https://jazzy-tanuki-abcac4.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter"
+        demoLink: "https://dreamy-dragon-38c580.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker"
     },
     {
         id: 4,
         image: '/crypto-quoter.webp',
         title: 'Crypto Quoter',
         description: 'Get real-time cryptocurrency prices',
-        demoLink: "",
-        codeLink: ""
+        demoLink: "https://jazzy-tanuki-abcac4.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter"
     },
     {
         id: 5,
