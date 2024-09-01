@@ -22,7 +22,7 @@ export default function Banner() {
             </div>
             <div>
                 <div className="box my-8 mx-auto size-64 lg:size-80 overflow-hidden rounded-full relative">
-                    <img src={me} alt="img" className="rounded-full absolute -top-7" />
+                    <img src={me} alt="img" className="rounded-full absolute -top-7" draggable="false" />
                 </div>
             </div>
         </section>
