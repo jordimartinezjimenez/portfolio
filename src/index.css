@@ -114,7 +114,8 @@ body {
   -o-transition: all .5s ease-out;
 } */
 
-.nav a > *:hover, header > a:first-of-type {
+.nav a>*:hover,
+header>a:first-of-type {
   filter: drop-shadow(0px 0px 2px red);
   -webkit-filter: drop-shadow(0px 0px 2px red);
 }
@@ -128,3 +129,33 @@ body {
     display: block;
   }
 } */
+
+
+/* Scrollbar WP Projects */
+
+.wp-project-scrollbar {
+  --sb-track-color: #e7ddd6;
+  --sb-thumb-color: #334155 ;
+  --sb-size: 14px;
+}
+
+.wp-project-scrollbar::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+.wp-project-scrollbar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+.wp-project-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .wp-project-scrollbar {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

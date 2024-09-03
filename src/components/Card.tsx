@@ -26,7 +26,7 @@ export default function Card({ project }: CardProps) {
         <article className="card max-w-sm rounded overflow-hidden shadow-lg bg-white bg-opacity-50 flex flex-col justify-between">
             {
                 type === 'wp' ?
-                    <div className="overflow-y-scroll max-h-48" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <div className="wp-project-scrollbar overflow-y-scroll max-h-48" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         <img className="w-full object-cover" src={image} alt={title}/>
                     </div>
                     :
