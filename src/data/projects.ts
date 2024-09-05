@@ -7,8 +7,8 @@ export const projects: Project[] = [
         image: '/control-gastos.webp',
         title: 'Expense Planner',
         description: 'Manage your budget and track your expenses',
-        demoLink: "https://amazing-sopapillas-c87590.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/control-gastos"
+        demoLink: "https://nimble-treacle-9deeb4.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi"
     },
     {
         id: 2,
