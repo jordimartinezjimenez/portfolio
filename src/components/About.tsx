@@ -2,7 +2,6 @@ import { skills } from '../data/skills'
 import docuwareLogo from "../assets/docuware-logo.svg"
 
 export default function About() {
-    console.log(docuwareLogo)
     return (
         <section id="about" className='min-h-[100vh] py-16 flex items-center'>
             <div className='container mx-auto flex items-center'>
