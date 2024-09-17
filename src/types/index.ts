@@ -8,6 +8,14 @@ export type Project = {
     description: string;
     demoLink: string;
     codeLink?: string;
+    techs?: techStyles[];
+}
+
+type techStyles = {
+    name: string,
+    icon?: IconType,
+    class: string
+    color?: string
 }
 
 export type Skill = {

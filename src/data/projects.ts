@@ -1,4 +1,41 @@
 import type { Project } from "../types"
+import { SiTailwindcss } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { TbApiApp } from "react-icons/tb";
+import { FaElementor, FaWordpress } from "react-icons/fa6";
+
+const techStyles = {
+    React: {
+        name: 'React',
+        icon: FaReact,
+        class: 'bg-sky-600/30',
+        color: '#57c4db'
+    },
+    Tailwind: {
+        name: 'TailwindCSS',
+        icon: SiTailwindcss,
+        class: 'bg-stone-600/30',
+        color: '#0ea6e9'
+    },
+    ContextApi: {
+        name: 'ContextAPI',
+        icon: TbApiApp,
+        class: 'bg-orange-600/30',
+        color: '#ff4400',
+    },
+    Wordpress: {
+        name: 'WordPress',
+        icon: FaWordpress,
+        class: 'bg-blue-600/30',
+        color: '#0775aa',
+    },
+    Elementor: {
+        name: 'Elementor',
+        icon: FaElementor,
+        class: 'bg-violet-600/30',
+        color: '#8f013d',
+    }
+}
 
 export const projects: Project[] = [
     {
@@ -8,7 +45,8 @@ export const projects: Project[] = [
         title: 'Expense Planner',
         description: 'Manage your budget and track your expenses',
         demoLink: "https://nimble-treacle-9deeb4.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi"
+        codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi",
+        techs: [techStyles.React, techStyles.Tailwind, techStyles.ContextApi]
     },
     {
         id: 2,
@@ -17,7 +55,8 @@ export const projects: Project[] = [
         title: 'Crypto Quoter',
         description: 'Get real-time cryptocurrency prices',
         demoLink: "https://jazzy-tanuki-abcac4.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter"
+        codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter",
+        techs: [techStyles.React, techStyles.Tailwind]
     },
     {
         id: 3,
@@ -26,7 +65,8 @@ export const projects: Project[] = [
         title: 'Calorie Tracker',
         description: 'Monitor your daily calorie intake',
         demoLink: "https://dreamy-dragon-38c580.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter"
+        codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker",
+        techs: [techStyles.React, techStyles.Tailwind]
     },
     // {
     //     id: 4,
@@ -61,7 +101,8 @@ export const projects: Project[] = [
         image: '/kit-digital.actualinternet.com.webp',
         title: 'Kit Digital',
         description: 'Landing Page to promote Kit Digital',
-        demoLink: "https://kit-digital.actualinternet.com/"
+        demoLink: "https://kit-digital.actualinternet.com/",
+        techs: [techStyles.Wordpress, techStyles.Elementor]
     },
     {
         id: 8,
@@ -69,7 +110,8 @@ export const projects: Project[] = [
         image: '/control-horario.oraculus.es.webp',
         title: 'Control Horario',
         description: 'Landing Page for a feature of Oraculus App',
-        demoLink: "https://control-horario.oraculus.es/"
+        demoLink: "https://control-horario.oraculus.es/",
+        techs: [techStyles.Wordpress, techStyles.Elementor]
     },
     {
         id: 9,
@@ -77,6 +119,7 @@ export const projects: Project[] = [
         image: '/anticcar.com.webp',
         title: 'Anticcar',
         description: 'Club of classic cars',
-        demoLink: "https://anticcar.com/"
+        demoLink: "https://anticcar.com/",
+        techs: [techStyles.Wordpress, techStyles.Elementor]
     }
 ]
