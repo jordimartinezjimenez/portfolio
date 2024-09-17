@@ -1,5 +1,5 @@
 import type { Project } from "../types"
-import { FaGithub, FaLink, FaReact } from 'react-icons/fa';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 type CardProps = {
     project: Project
