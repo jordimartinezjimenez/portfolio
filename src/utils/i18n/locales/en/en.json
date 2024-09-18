@@ -1,0 +1,36 @@
+{
+    "header": {
+        "hireBtn": "Hire me"
+    },
+    "banner": {
+        "subtitle": "I am a Front-End Developer",
+        "text": "Passionate about web design and development.<br/>Highly creative and imaginative.",
+        "contactBtn": "Contact",
+        "resumeBtn": "Resume"
+    },
+    "projects": {
+        "title": "My Projects",
+        "text": "Here are some of my latest works.<br/>To see more works you can visit my Github profile.",
+        "deployBtn": "Deploy",
+        "codeBtn": "Code"
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "Skills",
+        "text1": "Front-End developer passionate<br/> about bringing ideas to life through code.",
+        "text2": "My journey began with a love for technology<br/> that led me to study microcomputer systems and networks<br/>That's where I discovered web programming <br/>and instantly knew it was the path I wanted to pursue.",
+        "skills": {
+            "webDev": "Web Development",
+            "tools": "Tools",
+            "more": "More"
+        }
+    },
+    "contact": {
+        "title": "Drop<br/>a<br/>line!",
+        "subtitle": "Get in touch",
+        "name": "Your name",
+        "email": "Your email",
+        "message": "Your message",
+        "sendBtn": "Send"
+    }
+}

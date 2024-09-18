@@ -1,0 +1,36 @@
+{
+    "header": {
+        "hireBtn": "Contrátame"
+    },
+    "banner": {
+        "subtitle": "Soy Desarrollador Front-End",
+        "text": "Apasionado del diseño y desarrollo web.<br/>Muy creativo e imaginativo.",
+        "contactBtn": "Contacto",
+        "resumeBtn": "Currículum"
+    },
+    "projects": {
+        "title": "Mis Proyectos",
+        "text": "Aquí tienes algunos de mis últimos trabajos.<br/>Para ver más trabajos puedes visitar mi perfil de Github.",
+        "deployBtn": "Desplegar",
+        "codeBtn": "Código"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "subtitle": "Habilidades",
+        "text1": "Desarrollador Front-End apasionado<br/>por dar vida a las ideas a través del código.",
+        "text2": "Mi viaje comenzó con un amor por la tecnología<br/> que me llevó a estudiar sistemas microinformáticos y redes.<br/>Allí descubrí la programación web<br/>y supe al instante que era el camino que quería seguir.",
+        "skills": {
+            "webDev": "Desarrollo Web",
+            "tools": "Herramientas",
+            "more": "Más"
+        }
+    },
+    "contact": {
+        "title": "Deja<br/>un<br/>mensaje!",
+        "subtitle": "Póngase en contacto",
+        "name": "Su nombre",
+        "email": "Su correo electrónico",
+        "message": "Su mensaje",
+        "sendBtn": "Enviar"
+    }
+}

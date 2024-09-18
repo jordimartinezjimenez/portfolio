@@ -43,7 +43,9 @@ export const projects: Project[] = [
         type: 'code',
         image: '/control-gastos.webp',
         title: 'Expense Planner',
+        title_es: 'Control de Gastos',
         description: 'Manage your budget and track your expenses',
+        description_es: 'Gestione su presupuesto y controle sus gastos',
         demoLink: "https://nimble-treacle-9deeb4.netlify.app/",
         codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi",
         techs: [techStyles.React, techStyles.Tailwind, techStyles.ContextApi]
@@ -53,7 +55,9 @@ export const projects: Project[] = [
         type: 'code',
         image: '/crypto-quoter.webp',
         title: 'Crypto Quoter',
+        title_es: 'Cotizador de Criptomonedas',
         description: 'Get real-time cryptocurrency prices',
+        description_es: 'Obtenga precios de criptomonedas en tiempo real',
         demoLink: "https://jazzy-tanuki-abcac4.netlify.app/",
         codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter",
         techs: [techStyles.React, techStyles.Tailwind]
@@ -63,7 +67,9 @@ export const projects: Project[] = [
         type: 'code',
         image: '/calorie-tracker.webp',
         title: 'Calorie Tracker',
+        title_es: 'Seguimiento de Calorías',
         description: 'Monitor your daily calorie intake',
+        description_es: 'Monitore su ingesta de calorías diarias',
         demoLink: "https://dreamy-dragon-38c580.netlify.app/",
         codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker",
         techs: [techStyles.React, techStyles.Tailwind]
@@ -73,7 +79,9 @@ export const projects: Project[] = [
     //     type: 'code',
     //     image: '/citas-react.webp',
     //     title: 'Veterinary Patient Monitoring',
+    //     title_es: 'Seguimiento Sanitario de Pacientes',
     //     description: 'Health tracking for veterinary patients',
+    //     description_es: 'Seguimiento sanitario de pacientes veterinarios',
     //     demoLink: "https://aquamarine-brioche-d5b0cf.netlify.app/",
     //     codeLink: "https://github.com/jordimartinezjimenez/citas-react"
     // },
@@ -83,6 +91,7 @@ export const projects: Project[] = [
     //     image: '/guitarla.webp',
     //     title: 'GuitarLA',
     //     description: 'Shop a wide range of guitars online',
+    //     description_es: 'Compre un amplio rango de guitarras en línea',
     //     demoLink: "https://chipper-snickerdoodle-355054.netlify.app/",
     //     codeLink: "https://github.com/jordimartinezjimenez/guitarla-ts"
     // },
@@ -91,7 +100,9 @@ export const projects: Project[] = [
     //     type: 'code',
     //     image: '/tip-calculator.webp',
     //     title: 'Tip Calculator',
+    //     title_es: 'Calculadora de Propinas',
     //     description: 'Quickly calculate tips and consumption whith ease',
+    //     description_es: 'Calcule rápidamente propinas y consumo con facilidad',
     //     demoLink: "https://curious-khapse-c09d81.netlify.app/",
     //     codeLink: "https://github.com/jordimartinezjimenez/tip-calculator-reducer"
     // },
@@ -101,6 +112,7 @@ export const projects: Project[] = [
         image: '/kit-digital.actualinternet.com.webp',
         title: 'Kit Digital',
         description: 'Landing Page to promote Kit Digital',
+        description_es: 'Página de destino para promocionar Kit Digital',
         demoLink: "https://kit-digital.actualinternet.com/",
         techs: [techStyles.Wordpress, techStyles.Elementor]
     },
@@ -110,6 +122,7 @@ export const projects: Project[] = [
         image: '/control-horario.oraculus.es.webp',
         title: 'Control Horario',
         description: 'Landing Page for a feature of Oraculus App',
+        description_es: 'Página de destino para una funcionalidad de la App Oraculus',
         demoLink: "https://control-horario.oraculus.es/",
         techs: [techStyles.Wordpress, techStyles.Elementor]
     },
@@ -119,6 +132,7 @@ export const projects: Project[] = [
         image: '/anticcar.com.webp',
         title: 'Anticcar',
         description: 'Club of classic cars',
+        description_es: 'Club de coches clásicos',
         demoLink: "https://anticcar.com/",
         techs: [techStyles.Wordpress, techStyles.Elementor]
     }

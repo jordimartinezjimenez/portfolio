@@ -159,3 +159,13 @@ header>a:first-of-type {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
+
+.fi-circle {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  border-radius: 100%;
+  border: none;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .06);
+  background: white;
+}

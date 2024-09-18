@@ -5,13 +5,15 @@ export type Project = {
     type: string;
     image: string;
     title: string;
+    title_es?: string;
     description: string;
+    description_es?: string;
     demoLink: string;
     codeLink?: string;
     techs?: techStyles[];
 }
 
-type techStyles = {
+export type techStyles = {
     name: string,
     icon?: IconType,
     class: string
