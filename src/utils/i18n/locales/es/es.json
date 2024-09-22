@@ -3,7 +3,7 @@
         "hireBtn": "Contrátame"
     },
     "banner": {
-        "subtitle": "Soy Desarrollador Front-End",
+        "subtitle": "Soy Desarrollador Web",
         "text": "Apasionado del diseño y desarrollo web.<br/>Muy creativo e imaginativo.",
         "contactBtn": "Contacto",
         "resumeBtn": "Currículum"
@@ -17,7 +17,7 @@
     "about": {
         "title": "Sobre Mí",
         "subtitle": "Habilidades",
-        "text1": "Desarrollador Front-End apasionado<br/>por dar vida a las ideas a través del código.",
+        "text1": "Desarrollador Web apasionado<br/>por dar vida a las ideas a través del código.",
         "text2": "Mi viaje comenzó con un amor por la tecnología<br/> que me llevó a estudiar sistemas microinformáticos y redes.<br/>Allí descubrí la programación web<br/>y supe al instante que era el camino que quería seguir.",
         "skills": {
             "webDev": "Desarrollo Web",

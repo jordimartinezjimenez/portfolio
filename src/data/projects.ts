@@ -1,8 +1,9 @@
 import type { Project } from "../types"
-import { SiTailwindcss } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { SiTailwindcss, SiZod } from "react-icons/si";
+import { FaReact, FaWpforms } from "react-icons/fa";
 import { TbApiApp } from "react-icons/tb";
 import { FaElementor, FaWordpress } from "react-icons/fa6";
+import { RiBearSmileLine } from "react-icons/ri";
 
 const techStyles = {
     React: {
@@ -34,12 +35,54 @@ const techStyles = {
         icon: FaElementor,
         class: 'bg-violet-600/30',
         color: '#8f013d',
+    },
+    Zustand: {
+        name: 'Zustand',
+        icon: RiBearSmileLine,
+        class: 'bg-amber-900/30',
+        color: '#443f39',
+    },
+    Zod: {
+        name: 'Zod',
+        icon: SiZod,
+        class: 'bg-emerald-400/30',
+        color: '#55af82',
+    },
+    ReactHookForm: {
+        name: 'RHookForm',
+        icon: FaWpforms,
+        class: 'bg-pink-500/30',
+        color: '#ec5990',
     }
 }
 
 export const projects: Project[] = [
     {
         id: 1,
+        type: 'code',
+        image: '/patients.webp',
+        title: 'Veterinary Patient Monitoring',
+        title_es: 'Seguimiento Sanitario de Pacientes',
+        description: 'Health tracking for veterinary patients',
+        description_es: 'Seguimiento sanitario de pacientes veterinarios',
+        demoLink: "https://stately-sawine-3d2fbc.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/patients-zustand",
+        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
+    },
+    {
+        id: 2,
+        type: 'code',
+        image: '/crypto-quoter-v2.webp',
+        title: 'Crypto Quoter',
+        title_es: 'Cotizador de Criptomonedas',
+        description: 'Get real-time cryptocurrency prices',
+        description_es: 'Obtenga precios de criptomonedas en tiempo real',
+        demoLink: "https://gorgeous-kitsune-c8cf95.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/crypto-react-ts",
+        techs: [techStyles.React, techStyles.Zustand, techStyles.Zod]
+    },
+    {
+        id: 3,
         type: 'code',
         image: '/control-gastos.webp',
         title: 'Expense Planner',
@@ -49,30 +92,6 @@ export const projects: Project[] = [
         demoLink: "https://nimble-treacle-9deeb4.netlify.app/",
         codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi",
         techs: [techStyles.React, techStyles.Tailwind, techStyles.ContextApi]
-    },
-    {
-        id: 2,
-        type: 'code',
-        image: '/crypto-quoter.webp',
-        title: 'Crypto Quoter',
-        title_es: 'Cotizador de Criptomonedas',
-        description: 'Get real-time cryptocurrency prices',
-        description_es: 'Obtenga precios de criptomonedas en tiempo real',
-        demoLink: "https://jazzy-tanuki-abcac4.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter",
-        techs: [techStyles.React, techStyles.Tailwind]
-    },
-    {
-        id: 3,
-        type: 'code',
-        image: '/calorie-tracker.webp',
-        title: 'Calorie Tracker',
-        title_es: 'Seguimiento de Calorías',
-        description: 'Monitor your daily calorie intake',
-        description_es: 'Monitore su ingesta de calorías diarias',
-        demoLink: "https://dreamy-dragon-38c580.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker",
-        techs: [techStyles.React, techStyles.Tailwind]
     },
     // {
     //     id: 4,
@@ -122,7 +141,7 @@ export const projects: Project[] = [
         image: '/control-horario.oraculus.es.webp',
         title: 'Control Horario',
         description: 'Landing Page for a feature of Oraculus App',
-        description_es: 'Página de destino para una funcionalidad de la App Oraculus',
+        description_es: 'Página de destino para funcionalidad App Oraculus',
         demoLink: "https://control-horario.oraculus.es/",
         techs: [techStyles.Wordpress, techStyles.Elementor]
     },
@@ -135,5 +154,29 @@ export const projects: Project[] = [
         description_es: 'Club de coches clásicos',
         demoLink: "https://anticcar.com/",
         techs: [techStyles.Wordpress, techStyles.Elementor]
-    }
+    },
+    // {
+    //     id: 10,
+    //     type: 'code',
+    //     image: '/crypto-quoter.webp',
+    //     title: 'Crypto Quoter',
+    //     title_es: 'Cotizador de Criptomonedas',
+    //     description: 'Get real-time cryptocurrency prices',
+    //     description_es: 'Obtenga precios de criptomonedas en tiempo real',
+    //     demoLink: "https://jazzy-tanuki-abcac4.netlify.app/",
+    //     codeLink: "https://github.com/jordimartinezjimenez/crypto-quoter",
+    //     techs: [techStyles.React, techStyles.Tailwind]
+    // },
+    // {
+    //     id: 11,
+    //     type: 'code',
+    //     image: '/calorie-tracker.webp',
+    //     title: 'Calorie Tracker',
+    //     title_es: 'Seguimiento de Calorías',
+    //     description: 'Monitor your daily calorie intake',
+    //     description_es: 'Monitore su ingesta de calorías diarias',
+    //     demoLink: "https://dreamy-dragon-38c580.netlify.app/",
+    //     codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker",
+    //     techs: [techStyles.React, techStyles.Tailwind]
+    // },
 ]
