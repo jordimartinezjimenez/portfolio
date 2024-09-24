@@ -1,5 +1,5 @@
 import type { Project } from "../types"
-import { SiTailwindcss, SiZod } from "react-icons/si";
+import { SiReactrouter, SiTailwindcss, SiZod } from "react-icons/si";
 import { FaReact, FaWpforms } from "react-icons/fa";
 import { TbApiApp } from "react-icons/tb";
 import { FaElementor, FaWordpress } from "react-icons/fa6";
@@ -13,7 +13,7 @@ const techStyles = {
         color: '#57c4db'
     },
     Tailwind: {
-        name: 'TailwindCSS',
+        name: 'Tailwind',
         icon: SiTailwindcss,
         class: 'bg-stone-600/30',
         color: '#0ea6e9'
@@ -54,6 +54,13 @@ const techStyles = {
         class: 'bg-pink-500/30',
         color: '#ec5990',
     }
+    ,
+    ReactRouter: {
+        name: 'RRouter',
+        icon: SiReactrouter,
+        class: 'bg-rose-500/30',
+        color: '#f44251',
+    }
 }
 
 export const projects: Project[] = [
@@ -65,21 +72,21 @@ export const projects: Project[] = [
         title_es: 'Seguimiento Sanitario de Pacientes',
         description: 'Health tracking for veterinary patients',
         description_es: 'Seguimiento sanitario de pacientes veterinarios',
-        demoLink: "https://stately-sawine-3d2fbc.netlify.app/",
+        demoLink: "https://patients-jordimartinez.netlify.app",
         codeLink: "https://github.com/jordimartinezjimenez/patients-zustand",
-        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
+        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.Zustand, techStyles.Zod]
     },
     {
         id: 2,
         type: 'code',
-        image: '/crypto-quoter-v2.webp',
-        title: 'Crypto Quoter',
-        title_es: 'Cotizador de Criptomonedas',
-        description: 'Get real-time cryptocurrency prices',
-        description_es: 'Obtenga precios de criptomonedas en tiempo real',
-        demoLink: "https://gorgeous-kitsune-c8cf95.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/crypto-react-ts",
-        techs: [techStyles.React, techStyles.Zustand, techStyles.Zod]
+        image: '/drinks-app.webp',
+        title: 'Drinks App',
+        title_es: 'Drinks App',
+        description: 'Discover and mix your favorite drinks',
+        description_es: 'Descubre y mezcla tus bebidas favoritas',
+        demoLink: "https://drinks-app-jordimartinez.netlify.app",
+        codeLink: "https://github.com/jordimartinezjimenez/drinks-app",
+        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
     },
     {
         id: 3,
@@ -89,7 +96,7 @@ export const projects: Project[] = [
         title_es: 'Control de Gastos',
         description: 'Manage your budget and track your expenses',
         description_es: 'Gestione su presupuesto y controle sus gastos',
-        demoLink: "https://nimble-treacle-9deeb4.netlify.app/",
+        demoLink: "https://control-gastos-jordimartinez.netlify.app",
         codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi",
         techs: [techStyles.React, techStyles.Tailwind, techStyles.ContextApi]
     },
@@ -114,17 +121,18 @@ export const projects: Project[] = [
     //     demoLink: "https://chipper-snickerdoodle-355054.netlify.app/",
     //     codeLink: "https://github.com/jordimartinezjimenez/guitarla-ts"
     // },
-    // {
-    //     id: 6,
-    //     type: 'code',
-    //     image: '/tip-calculator.webp',
-    //     title: 'Tip Calculator',
-    //     title_es: 'Calculadora de Propinas',
-    //     description: 'Quickly calculate tips and consumption whith ease',
-    //     description_es: 'Calcule rápidamente propinas y consumo con facilidad',
-    //     demoLink: "https://curious-khapse-c09d81.netlify.app/",
-    //     codeLink: "https://github.com/jordimartinezjimenez/tip-calculator-reducer"
-    // },
+    {
+        id: 6,
+        type: 'code',
+        image: '/tip-calculator.webp',
+        title: 'Tip Calculator',
+        title_es: 'Calculadora de Propinas',
+        description: 'Quickly calculate tips and consumption',
+        description_es: 'Calcule rápidamente propinas y consumo',
+        demoLink: "https://tip-calculator-jordimartinez.netlify.app",
+        codeLink: "https://github.com/jordimartinezjimenez/tip-calculator-reducer",
+        techs: [techStyles.React, techStyles.Tailwind]
+    },
     {
         id: 7,
         type: 'wp',
@@ -179,4 +187,28 @@ export const projects: Project[] = [
     //     codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker",
     //     techs: [techStyles.React, techStyles.Tailwind]
     // },
+    {
+        id: 12,
+        type: 'code',
+        image: '/crypto-quoter-v2.webp',
+        title: 'Crypto Quoter',
+        title_es: 'Cotizador de Criptomonedas',
+        description: 'Get real-time cryptocurrency prices',
+        description_es: 'Obtenga precios de criptomonedas en tiempo real',
+        demoLink: "https://crypto-quoter-jordimartinez.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/crypto-react-ts",
+        techs: [techStyles.React, techStyles.Zustand, techStyles.Zod]
+    },
+    {
+        id: 13,
+        type: 'code',
+        image: '/weather-app.webp',
+        title: 'Weather App',
+        title_es: 'Weather App',
+        description: 'Real-time temperatures by location',
+        description_es: 'Temperaturas en tiempo real por ubicación',
+        demoLink: "https://weather-app-jordimartinez.netlify.app",
+        codeLink: "https://github.com/jordimartinezjimenez/weather-react-ts",
+        techs: [techStyles.React, techStyles.Zod]
+    },
 ]
