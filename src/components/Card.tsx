@@ -4,11 +4,12 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 
 type CardProps = {
     project: Project
+    type: string
 }
 
-export default function Card({ project }: CardProps) {
+export default function Card({ project, type }: CardProps) {
 
-    const { type, image, title, title_es, description, description_es, demoLink, codeLink, techs } = project
+    const { image, title, title_es, description, description_es, demoLink, codeLink, techs } = project
     const { t } = useTranslation()
     const lng = localStorage.getItem('i18nLng')
 
