@@ -74,7 +74,7 @@ export const projects: Project[] = [
         description_es: 'Seguimiento sanitario de pacientes veterinarios',
         demoLink: "https://patients-jordimartinez.netlify.app",
         codeLink: "https://github.com/jordimartinezjimenez/patients-zustand",
-        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.Zustand, techStyles.Zod]
+        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
     },
     {
         id: 2,
@@ -86,7 +86,7 @@ export const projects: Project[] = [
         description_es: 'Descubre y mezcla tus bebidas favoritas',
         demoLink: "https://drinks-app-jordimartinez.netlify.app",
         codeLink: "https://github.com/jordimartinezjimenez/drinks-app",
-        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
+        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.Zustand, techStyles.Zod]
     },
     {
         id: 3,

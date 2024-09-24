@@ -18,12 +18,12 @@ export default function Projects() {
                     <div className="flex w-full justify-center mt-5">
                         <div className="w-full">
                             <TabGroup>
-                                <TabList className="flex gap-x-4 bg-zinc-600/10 w-[14.5rem] rounded-lg">
+                                <TabList className="flex gap-x-4 bg-zinc-600/10 w-[15rem] rounded-lg">
                                     <Tab className="rounded-lg py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:bg-black/10 data-[hover]:bg-black/5 data-[selected]:data-[hover]:bg-black/10 data-[focus]:outline-1 data-[focus]:outline-black">
-                                        <p className="flex items-center justify-center gap-1 text-lg"><FaCode color="#c73697" /><span>Code</span></p>
+                                        <p className="flex items-center justify-center gap-2 text-lg"><FaCode color="#c73697" /><span>Code</span></p>
                                     </Tab>
                                     <Tab className="rounded-lg py-1 px-3 text-sm/6 font-semibold focus:outline-none data-[selected]:bg-black/10 data-[hover]:bg-black/5 data-[selected]:data-[hover]:bg-black/10 data-[focus]:outline-1 data-[focus]:outline-black">
-                                        <p className="flex items-center justify-center gap-1 text-lg"><FaWordpress color="#0775aa" /><span>Wordpress</span></p>
+                                        <p className="flex items-center justify-center gap-2 text-lg"><FaWordpress color="#0775aa" /><span>WordPress</span></p>
                                     </Tab>
                                 </TabList>
                                 <TabPanels>
