@@ -1,9 +1,9 @@
 import type { Project } from "../types"
-import { SiReactrouter, SiTailwindcss, SiZod } from "react-icons/si";
+import { SiExpress, SiJest, SiPostgresql, SiReactrouter, SiSequelize, SiSwagger, SiTailwindcss, SiZod } from "react-icons/si";
 import { FaReact, FaWpforms } from "react-icons/fa";
 import { TbApiApp } from "react-icons/tb";
 import { FaElementor, FaWordpress } from "react-icons/fa6";
-import { RiBearSmileLine } from "react-icons/ri";
+import { RiBearSmileLine, RiRobot2Line } from "react-icons/ri";
 
 const techStyles = {
     React: {
@@ -53,14 +53,49 @@ const techStyles = {
         icon: FaWpforms,
         class: 'bg-pink-500/30',
         color: '#ec5990',
-    }
-    ,
+    },
     ReactRouter: {
         name: 'RRouter',
         icon: SiReactrouter,
         class: 'bg-rose-500/30',
         color: '#f44251',
-    }
+    },
+    ExpressJS: {
+        name: 'ExpressJS',
+        icon: SiExpress,
+        class: 'bg-slate-200/50',
+        color: '#010409',
+    },
+    Valibot: {
+        name: 'Valibot',
+        icon: RiRobot2Line,
+        class: 'bg-slate-700/20',
+        color: '#38bdf8',
+    },
+    Jest: {
+        name: 'Jest/Supertest',
+        icon: SiJest,
+        class: 'bg-red-800/25',
+        color: '#8d3c56',
+    },
+    PostgresSQL: {
+        name: 'PostgresSQL',
+        icon: SiPostgresql,
+        class: 'bg-cyan-600/30',
+        color: '#212121',
+    },
+    Sequelize: {
+        name: 'Sequelize',
+        icon: SiSequelize,
+        class: 'bg-blue-300/40',
+        color: '#3c75c2',
+    },
+    Swagger: {
+        name: 'Swagger',
+        icon: SiSwagger,
+        class: 'bg-lime-600/30',
+        color: '#173648',
+    },
 }
 
 export const projects: Project[] = [
@@ -124,14 +159,14 @@ export const projects: Project[] = [
     {
         id: 6,
         type: 'code',
-        image: '/tip-calculator.webp',
-        title: 'Tip Calculator',
-        title_es: 'Calculadora de Propinas',
-        description: 'Quickly calculate tips and consumption',
-        description_es: 'Calcule rápidamente propinas y consumo',
-        demoLink: "https://tip-calculator-jordimartinez.netlify.app",
-        codeLink: "https://github.com/jordimartinezjimenez/tip-calculator-reducer",
-        techs: [techStyles.React, techStyles.Tailwind]
+        image: '/product-manager.webp',
+        title: 'Product Manager',
+        title_es: 'Gestor de productos',
+        description: 'PERN FullStack project',
+        description_es: 'Proyecto PERN FullStack',
+        demoLink: "https://product-manager-jordimartinez.vercel.app",
+        codeLink: "https://github.com/jordimartinezjimenez/product-manager-fullstack",
+        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.ExpressJS, techStyles.Valibot, techStyles.Jest, techStyles.PostgresSQL, techStyles.Sequelize, techStyles.Swagger]
     },
     {
         id: 7,
@@ -190,18 +225,6 @@ export const projects: Project[] = [
     {
         id: 12,
         type: 'code',
-        image: '/crypto-quoter-v2.webp',
-        title: 'Crypto Quoter',
-        title_es: 'Cotizador de Criptomonedas',
-        description: 'Get real-time cryptocurrency prices',
-        description_es: 'Obtenga precios de criptomonedas en tiempo real',
-        demoLink: "https://crypto-quoter-jordimartinez.netlify.app/",
-        codeLink: "https://github.com/jordimartinezjimenez/crypto-react-ts",
-        techs: [techStyles.React, techStyles.Zustand, techStyles.Zod]
-    },
-    {
-        id: 13,
-        type: 'code',
         image: '/weather-app.webp',
         title: 'Weather App',
         title_es: 'Weather App',
@@ -211,4 +234,28 @@ export const projects: Project[] = [
         codeLink: "https://github.com/jordimartinezjimenez/weather-react-ts",
         techs: [techStyles.React, techStyles.Zod]
     },
+    {
+        id: 13,
+        type: 'code',
+        image: '/crypto-quoter-v2.webp',
+        title: 'Crypto Quoter',
+        title_es: 'Cotizador de Criptomonedas',
+        description: 'Get real-time cryptocurrency prices',
+        description_es: 'Obtenga precios de criptomonedas en tiempo real',
+        demoLink: "https://crypto-quoter-jordimartinez.netlify.app/",
+        codeLink: "https://github.com/jordimartinezjimenez/crypto-react-ts",
+        techs: [techStyles.React, techStyles.Zustand, techStyles.Zod]
+    },
+    // {
+    //     id: 14,
+    //     type: 'code',
+    //     image: '/tip-calculator.webp',
+    //     title: 'Tip Calculator',
+    //     title_es: 'Calculadora de Propinas',
+    //     description: 'Quickly calculate tips and consumption',
+    //     description_es: 'Calcule rápidamente propinas y consumo',
+    //     demoLink: "https://tip-calculator-jordimartinez.netlify.app",
+    //     codeLink: "https://github.com/jordimartinezjimenez/tip-calculator-reducer",
+    //     techs: [techStyles.React, techStyles.Tailwind]
+    // },
 ]

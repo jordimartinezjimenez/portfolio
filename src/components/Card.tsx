@@ -17,7 +17,6 @@ export default function Card({ project, type }: CardProps) {
         event.currentTarget.offsetParent?.children[1].classList.add('hidden')
         event.currentTarget.offsetParent?.children[2].classList.add('hidden')
         event.currentTarget.classList.add('max-h-[22.4rem]')
-        console.log()
     }
 
     const handleMouseLeave = (event: React.MouseEvent<HTMLDivElement>) => {
