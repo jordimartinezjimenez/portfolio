@@ -33,36 +33,6 @@ body {
   background-size: 24px 24px;
 }
 
-.box {
-  align-items: center;
-  animation: gradient_box 5s ease infinite;
-  background-clip: content-box, border-box;
-  background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #fa8980 30%, #e91e63 45%, #a8083e 67%, #e91edf 87%);
-  background-origin: border-box;
-  background-size: 300% 300%;
-  border: 11px solid #0000;
-  justify-content: center;
-  transition: all .4s ease;
-}
-
-.box:hover {
-  box-shadow: 0px 4.42184px 107.23px #e91e63;
-}
-
-@keyframes gradient_box {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .nav {
   position: fixed;
   left: 50%;

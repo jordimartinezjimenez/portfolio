@@ -1,9 +1,10 @@
 import { useTranslation, Trans } from "react-i18next"
 // import me from "../assets/me.webp"
-import me3 from "../assets/me3.webp"
+// import me3 from "../assets/me3.webp"
 import resume from "../assets/CV-Jordi_Martinez_Jimenez.pdf"
 import { FaCloudDownloadAlt, FaEnvelope, FaGithub, FaLinkedin, FaRegClipboard } from "react-icons/fa"
 import { FaCheck } from "react-icons/fa6"
+import Me from "./Me/Me"
 
 export default function Banner() {
 
@@ -39,10 +40,10 @@ export default function Banner() {
                 </div>
             </div>
             <div>
-                <div className="box my-8 mx-auto size-64 lg:size-80 overflow-hidden rounded-full relative hover:[transform:rotate3d(20_,-10,_1,_20deg)]">
-                    {/* <img src={me} alt="img" className="rounded-full absolute -top-7" draggable="false" /> */}
+                {/* <div className="box my-8 mx-auto size-64 lg:size-80 overflow-hidden rounded-full relative hover:[transform:rotate3d(20_,-10,_1,_20deg)]">
                     <img src={me3} alt="img" className="rounded-full absolute  scale-x-[-1]" draggable="false" />
-                </div>
+                </div> */}
+                <Me />
             </div>
         </section>
     )
