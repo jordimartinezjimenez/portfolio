@@ -3,7 +3,7 @@ import me3 from "../../assets/me3.webp"
 
 export default function Me() {
     return (
-        <div className="canvas size-64 lg:size-80 relative rounded-full overflow-hidden my-8 mx-auto select-none">
+        <div className="canvas size-64 lg:size-80 relative rounded-full overflow-hidden mx-auto select-none">
             <div className="tracker tr-1"></div>
             <div className="tracker tr-2"></div>
             <div className="tracker tr-3"></div>

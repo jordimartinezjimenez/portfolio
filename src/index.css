@@ -162,11 +162,15 @@ header>a:first-of-type {
   padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
   border-radius: 4px;
   pointer-events: none;
-  /* transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
-  -webkit-border-radius: 4px;
+  /*transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  */-webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .tooltip::before {
@@ -197,7 +201,7 @@ header>a:first-of-type {
 .copy:focus:not(:focus-visible) .tooltip {
   opacity: 1;
   visibility: visible;
-  top: calc((100% + 8px) * 1);
+  top: calc((100% + 1px) * 1);
 }
 
 .copy:focus:not(:focus-visible) .tooltip::before {

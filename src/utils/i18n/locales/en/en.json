@@ -10,6 +10,9 @@
         "clipboard": "Copy to clipboard",
         "clipboardTooltip": "Copied!"
     },
+    "badge": {
+        "text": "Open to Work"
+    },
     "projects": {
         "title": "My Projects",
         "text": "Here are some of my latest works.<br/>To see more works you can visit my Github profile.",

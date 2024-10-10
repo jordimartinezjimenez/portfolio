@@ -10,6 +10,9 @@
         "clipboard": "Copiar al portapapeles",
         "clipboardTooltip": "Copiado!"
     },
+    "badge": {
+        "text": "Disponible para Trabajar"
+    },
     "projects": {
         "title": "Mis Proyectos",
         "text": "Aquí tienes algunos de mis últimos trabajos.<br/>Para ver más trabajos puedes visitar mi perfil de Github.",
