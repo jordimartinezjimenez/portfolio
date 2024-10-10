@@ -1,10 +1,9 @@
 import { useTranslation, Trans } from "react-i18next"
 // import me from "../assets/me.webp"
-import me3 from "../assets/me3.png"
+import me3 from "../assets/me3.webp"
 import resume from "../assets/CV-Jordi_Martinez_Jimenez.pdf"
 import { FaCloudDownloadAlt, FaEnvelope, FaGithub, FaLinkedin, FaRegClipboard } from "react-icons/fa"
 import { FaCheck } from "react-icons/fa6"
-// import copy from "../assets/copy.svg"
 
 export default function Banner() {
 
