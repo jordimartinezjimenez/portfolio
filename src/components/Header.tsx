@@ -14,7 +14,7 @@ export default function Header() {
     }
 
     return (
-        <header className="flex justify-between items-center py-8 relative">
+        <header className="flex justify-between items-center py-8 relative text-slate-100">
             <a href="#home"><img src={logo} alt="logo" className="w-[124px] cursor-pointer hover:scale-110 transition-all duration-[400ms] ease" /></a>
             <div className="flex gap-x-2 absolute left-9 top-[5rem] xs:static xs:mx-2">
                 <button onClick={() => handleChangeLanguage("en")}><span className="fi fi-gb fis fi-circle hover:scale-125 transition duration-[400ms] ease"></span></button>
