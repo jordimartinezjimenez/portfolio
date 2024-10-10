@@ -162,8 +162,8 @@ header>a:first-of-type {
   padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
   border-radius: 4px;
   pointer-events: none;
-  /*transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  */-webkit-border-radius: 4px;
+  /*transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
