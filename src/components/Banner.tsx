@@ -1,11 +1,18 @@
 import { useTranslation, Trans } from "react-i18next"
-import me from "../assets/me.webp"
+// import me from "../assets/me.webp"
+import me3 from "../assets/me3.png"
 import resume from "../assets/CV-Jordi_Martinez_Jimenez.pdf"
-import { FaCloudDownloadAlt, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaCloudDownloadAlt, FaEnvelope, FaGithub, FaLinkedin, FaRegClipboard } from "react-icons/fa"
+import { FaCheck } from "react-icons/fa6"
+// import copy from "../assets/copy.svg"
 
 export default function Banner() {
 
     const { t } = useTranslation()
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(location.href)
+    }
 
     return (
         <section className="min-h-[100vh] container mx-auto flex flex-col justify-center items-center lg:justify-between lg:flex-row">
@@ -23,11 +30,19 @@ export default function Banner() {
                     <a href="https://www.linkedin.com/in/jordi-martinez-jimenez/" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-all duration-[400ms] ease"><FaLinkedin color="#334155" size={35} /></a>
                     <a href="https://github.com/jordimartinezjimenez" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-all duration-[400ms] ease"><FaGithub color="#334155" size={35} /> </a>
                     <a href="mailto:jordimj63@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-all duration-[400ms] ease"><FaEnvelope color="#334155" size={35} /></a>
+                    <button type="button" onClick={copyToClipboard} className="copy">
+                        <span data-text-end={t('banner.clipboardTooltip')} data-text-initial={t('banner.clipboard')} className="tooltip"></span>
+                        <span className="flex justify-center items-center">
+                            <FaRegClipboard className="clipboard" />
+                            <FaCheck className="checkmark" />
+                        </span>
+                    </button>
                 </div>
             </div>
             <div>
-                <div className="box my-8 mx-auto size-64 lg:size-80 overflow-hidden rounded-full relative">
-                    <img src={me} alt="img" className="rounded-full absolute -top-7" draggable="false" />
+                <div className="box my-8 mx-auto size-64 lg:size-80 overflow-hidden rounded-full relative hover:[transform:rotate3d(20_,-10,_1,_20deg)]">
+                    {/* <img src={me} alt="img" className="rounded-full absolute -top-7" draggable="false" /> */}
+                    <img src={me3} alt="img" className="rounded-full absolute  scale-x-[-1]" draggable="false" />
                 </div>
             </div>
         </section>

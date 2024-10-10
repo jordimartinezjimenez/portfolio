@@ -135,7 +135,7 @@ header>a:first-of-type {
 
 .wp-project-scrollbar {
   --sb-track-color: #e7ddd6;
-  --sb-thumb-color: #334155 ;
+  --sb-thumb-color: #334155;
   --sb-size: 14px;
 }
 
@@ -168,4 +168,76 @@ header>a:first-of-type {
   border: none;
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .06);
   background: white;
+}
+
+/* Copy button */
+
+.copy {
+  position: relative;
+  --tooltip-padding-x: 7px;
+  --tooltip-padding-y: 7px;
+}
+
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  visibility: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font: 12px Menlo, Roboto Mono, monospace;
+  color: rgb(50, 50, 50);
+  background-color: #f4f3f3d3;
+  padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
+  border-radius: 4px;
+  pointer-events: none;
+  /* transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.tooltip::before {
+  content: attr(data-text-initial);
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--tooltip-padding-y) / 2 * -1);
+  width: var(--tooltip-padding-y);
+  height: var(--tooltip-padding-y);
+  background: inherit;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+.checkmark {
+  display: none;
+}
+
+/* actions */
+
+.copy:hover .tooltip,
+.copy:focus:not(:focus-visible) .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: calc((100% + 8px) * 1);
+}
+
+.copy:focus:not(:focus-visible) .tooltip::before {
+  content: attr(data-text-end);
+}
+
+.copy:focus:not(:focus-visible) .clipboard {
+  display: none;
+}
+
+.copy:focus:not(:focus-visible) .checkmark {
+  display: block;
 }

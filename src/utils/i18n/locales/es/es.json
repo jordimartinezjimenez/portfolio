@@ -6,7 +6,9 @@
         "subtitle": "Soy Desarrollador Web",
         "text": "Apasionado del diseño y desarrollo web.<br/>Muy creativo e imaginativo.",
         "contactBtn": "Contacto",
-        "resumeBtn": "Currículum"
+        "resumeBtn": "Currículum",
+        "clipboard": "Copiar al portapapeles",
+        "clipboardTooltip": "Copiado!"
     },
     "projects": {
         "title": "Mis Proyectos",
