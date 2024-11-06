@@ -42,7 +42,7 @@ export default function About() {
                                 </div>
                                 <div className="text-slate-700/90 mt-5 mb-5 px-2 h2 min-w-[350px] text-4xl flex gap-4 flex-wrap">
                                     {skills.filter((skill) => skill.type === 'tools').map((skill) => (
-                                        <div key={skill.id} className='flex flex-col items-center'>
+                                        <div key={skill.id} className='flex flex-col items-center from-right'>
                                             <skill.icon className='transition-all ease-in-out hover:rotate-12' /><span className='text-sm'>{skill.name}</span>
                                         </div>
                                     ))}

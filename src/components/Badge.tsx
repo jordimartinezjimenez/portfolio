@@ -5,7 +5,7 @@ export default function Badge() {
     const { t } = useTranslation()
 
     return (
-        <div className="flex items-center">
+        <div className="flex items-center animate-bounce">
             <a
                 href="https://linkedin.com/in/jordi-martinez-jimenez"
                 target="_blank"
