@@ -6,6 +6,7 @@ import { FaCloudDownloadAlt, FaEnvelope, FaGithub, FaLinkedin, FaRegClipboard } 
 import { FaCheck } from "react-icons/fa6"
 import Me from "./Me/Me"
 import Badge from "./Badge"
+import ThemeSwitch from "./ThemeSwitch/ThemeSwitch"
 
 export default function Banner() {
 
@@ -28,7 +29,7 @@ export default function Banner() {
                     <a href="#contact" className="flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-500 rounded-lg gap-2 py-1.5 px-8 cursor-pointer shadow-lg shadow-rose-500/50 hover:scale-110 transition-all duration-[400ms] ease"><FaEnvelope color="white" />{t('banner.contactBtn')}</a>
                     <a href={cv} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-gradient-to-r from-rose-700 to-pink-700 rounded-lg gap-2 py-1.5 px-8 cursor-pointer shadow-lg shadow-rose-500/50 hover:scale-110 transition-all duration-[400ms] ease"><FaCloudDownloadAlt color="white" />{t('banner.resumeBtn')}</a>
                 </div>
-                <div className="flex gap-x-6 max-w-max mx-auto lg:mx-0">
+                <div className="flex gap-x-5 max-w-max mx-auto lg:mx-0">
                     <a href="https://www.linkedin.com/in/jordi-martinez-jimenez/" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-all duration-[400ms] ease"><FaLinkedin color="#334155" size={35} /></a>
                     <a href="https://github.com/jordimartinezjimenez" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-all duration-[400ms] ease"><FaGithub color="#334155" size={35} /> </a>
                     <a href="mailto:jordimj63@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:scale-125 transition-all duration-[400ms] ease"><FaEnvelope color="#334155" size={35} /></a>
@@ -39,6 +40,7 @@ export default function Banner() {
                             <FaCheck className="checkmark" />
                         </span>
                     </button>
+
                 </div>
             </div>
             <div className="my-8 flex flex-col items-center justify-center gap-y-2">
@@ -47,6 +49,7 @@ export default function Banner() {
                 </div> */}
                 <Badge />
                 <Me />
+                {/* <ThemeSwitch /> */}
             </div>
         </section>
     )
