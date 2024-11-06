@@ -1,5 +1,5 @@
 import type { Project } from "../types"
-import { SiExpress, SiJest, SiPostgresql, SiReactrouter, SiSequelize, SiSwagger, SiTailwindcss, SiZod } from "react-icons/si";
+import { SiExpress, SiJest, SiJsonwebtokens, SiMongodb, SiMongoose, SiPostgresql, SiReactquery, SiReactrouter, SiSequelize, SiSwagger, SiTailwindcss, SiZod } from "react-icons/si";
 import { FaReact, FaWpforms } from "react-icons/fa";
 import { TbApiApp } from "react-icons/tb";
 import { FaElementor, FaWordpress } from "react-icons/fa6";
@@ -96,35 +96,47 @@ const techStyles = {
         class: 'bg-lime-600/30',
         color: '#173648',
     },
+    MongoDB: {
+        name: 'MongoDB',
+        icon: SiMongodb,
+        class: 'bg-lime-400/30',
+        color: '#00694a',
+    },
+    Mongoose: {
+        name: 'Mongoose',
+        icon: SiMongoose,
+        class: 'bg-amber-800/20',
+        color: '#880101',
+    },
+    JWT: {
+        name: 'JWT',
+        icon: SiJsonwebtokens,
+        class: 'bg-pink-400/30',
+        color: '#d63aff',
+    },
+    ReactQuery: {
+        name: 'RQuery',
+        icon: SiReactquery,
+        class: 'bg-orange-500/30',
+        color: '#ee4544',
+    },
 }
 
 export const projects: Project[] = [
     {
         id: 1,
         type: 'code',
-        image: '/patients.webp',
-        title: 'Veterinary Patient Monitoring',
-        title_es: 'Seguimiento Sanitario de Pacientes',
-        description: 'Health tracking for veterinary patients',
-        description_es: 'Seguimiento sanitario de pacientes veterinarios',
-        demoLink: "https://patients-jordimartinez.netlify.app",
-        codeLink: "https://github.com/jordimartinezjimenez/patients-zustand",
-        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
+        image: '/onlytasks.webp',
+        title: 'OnlyTasks',
+        title_es: 'OnlyTasks',
+        description: 'MERN FullStack project',
+        description_es: 'Proyecto MERN FullStack',
+        demoLink: "https://onlytasks-frontend.vercel.app",
+        codeLink: "https://github.com/jordimartinezjimenez/onlytasks-frontend",
+        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.ExpressJS, techStyles.Zod, techStyles.MongoDB, techStyles.Mongoose, techStyles.JWT, techStyles.ReactQuery]
     },
     {
         id: 2,
-        type: 'code',
-        image: '/drinks-app.webp',
-        title: 'Drinks App',
-        title_es: 'Drinks App',
-        description: 'Discover and mix your favorite drinks',
-        description_es: 'Descubre y mezcla tus bebidas favoritas',
-        demoLink: "https://drinks-app-jordimartinez.netlify.app",
-        codeLink: "https://github.com/jordimartinezjimenez/drinks-app",
-        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.Zustand, techStyles.Zod]
-    },
-    {
-        id: 3,
         type: 'code',
         image: '/control-gastos.webp',
         title: 'Expense Planner',
@@ -135,29 +147,8 @@ export const projects: Project[] = [
         codeLink: "https://github.com/jordimartinezjimenez/control-gastos-contextapi",
         techs: [techStyles.React, techStyles.Tailwind, techStyles.ContextApi]
     },
-    // {
-    //     id: 4,
-    //     type: 'code',
-    //     image: '/citas-react.webp',
-    //     title: 'Veterinary Patient Monitoring',
-    //     title_es: 'Seguimiento Sanitario de Pacientes',
-    //     description: 'Health tracking for veterinary patients',
-    //     description_es: 'Seguimiento sanitario de pacientes veterinarios',
-    //     demoLink: "https://aquamarine-brioche-d5b0cf.netlify.app/",
-    //     codeLink: "https://github.com/jordimartinezjimenez/citas-react"
-    // },
-    // {
-    //     id: 5,
-    //     type: 'code',
-    //     image: '/guitarla.webp',
-    //     title: 'GuitarLA',
-    //     description: 'Shop a wide range of guitars online',
-    //     description_es: 'Compre un amplio rango de guitarras en línea',
-    //     demoLink: "https://chipper-snickerdoodle-355054.netlify.app/",
-    //     codeLink: "https://github.com/jordimartinezjimenez/guitarla-ts"
-    // },
     {
-        id: 6,
+        id: 3,
         type: 'code',
         image: '/product-manager.webp',
         title: 'Product Manager',
@@ -169,7 +160,52 @@ export const projects: Project[] = [
         techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.ExpressJS, techStyles.Valibot, techStyles.Jest, techStyles.PostgresSQL, techStyles.Sequelize, techStyles.Swagger]
     },
     {
-        id: 7,
+        id: 4,
+        type: 'code',
+        image: '/patients.webp',
+        title: 'Veterinary Patient Monitoring',
+        title_es: 'Seguimiento Sanitario de Pacientes',
+        description: 'Health tracking for veterinary patients',
+        description_es: 'Seguimiento sanitario de pacientes veterinarios',
+        demoLink: "https://patients-jordimartinez.netlify.app",
+        codeLink: "https://github.com/jordimartinezjimenez/patients-zustand",
+        techs: [techStyles.React, techStyles.Tailwind, techStyles.Zustand, techStyles.ReactHookForm]
+    },
+    {
+        id: 5,
+        type: 'code',
+        image: '/drinks-app.webp',
+        title: 'Drinks App',
+        title_es: 'Drinks App',
+        description: 'Discover and mix your favorite drinks',
+        description_es: 'Descubre y mezcla tus bebidas favoritas',
+        demoLink: "https://drinks-app-jordimartinez.netlify.app",
+        codeLink: "https://github.com/jordimartinezjimenez/drinks-app",
+        techs: [techStyles.React, techStyles.ReactRouter, techStyles.Tailwind, techStyles.Zustand, techStyles.Zod]
+    },
+    // {
+    //     id: 6,
+    //     type: 'code',
+    //     image: '/citas-react.webp',
+    //     title: 'Veterinary Patient Monitoring',
+    //     title_es: 'Seguimiento Sanitario de Pacientes',
+    //     description: 'Health tracking for veterinary patients',
+    //     description_es: 'Seguimiento sanitario de pacientes veterinarios',
+    //     demoLink: "https://aquamarine-brioche-d5b0cf.netlify.app/",
+    //     codeLink: "https://github.com/jordimartinezjimenez/citas-react"
+    // },
+    // {
+    //     id: 7,
+    //     type: 'code',
+    //     image: '/guitarla.webp',
+    //     title: 'GuitarLA',
+    //     description: 'Shop a wide range of guitars online',
+    //     description_es: 'Compre un amplio rango de guitarras en línea',
+    //     demoLink: "https://chipper-snickerdoodle-355054.netlify.app/",
+    //     codeLink: "https://github.com/jordimartinezjimenez/guitarla-ts"
+    // },
+    {
+        id: 8,
         type: 'wp',
         image: '/kit-digital.actualinternet.com.webp',
         title: 'Kit Digital',
@@ -179,7 +215,7 @@ export const projects: Project[] = [
         techs: [techStyles.Wordpress, techStyles.Elementor]
     },
     {
-        id: 8,
+        id: 9,
         type: 'wp',
         image: '/control-horario.oraculus.es.webp',
         title: 'Control Horario',
@@ -189,7 +225,7 @@ export const projects: Project[] = [
         techs: [techStyles.Wordpress, techStyles.Elementor]
     },
     {
-        id: 9,
+        id: 10,
         type: 'wp',
         image: '/anticcar.com.webp',
         title: 'Anticcar',
@@ -199,7 +235,7 @@ export const projects: Project[] = [
         techs: [techStyles.Wordpress, techStyles.Elementor]
     },
     // {
-    //     id: 10,
+    //     id: 11,
     //     type: 'code',
     //     image: '/crypto-quoter.webp',
     //     title: 'Crypto Quoter',
@@ -211,7 +247,7 @@ export const projects: Project[] = [
     //     techs: [techStyles.React, techStyles.Tailwind]
     // },
     // {
-    //     id: 11,
+    //     id: 12,
     //     type: 'code',
     //     image: '/calorie-tracker.webp',
     //     title: 'Calorie Tracker',
@@ -222,20 +258,20 @@ export const projects: Project[] = [
     //     codeLink: "https://github.com/jordimartinezjimenez/calorie-tracker",
     //     techs: [techStyles.React, techStyles.Tailwind]
     // },
+    // {
+    //     id: 13,
+    //     type: 'code',
+    //     image: '/weather-app.webp',
+    //     title: 'Weather App',
+    //     title_es: 'Weather App',
+    //     description: 'Real-time temperatures by location',
+    //     description_es: 'Temperaturas en tiempo real por ubicación',
+    //     demoLink: "https://weather-app-jordimartinez.netlify.app",
+    //     codeLink: "https://github.com/jordimartinezjimenez/weather-react-ts",
+    //     techs: [techStyles.React, techStyles.Zod]
+    // },
     {
-        id: 12,
-        type: 'code',
-        image: '/weather-app.webp',
-        title: 'Weather App',
-        title_es: 'Weather App',
-        description: 'Real-time temperatures by location',
-        description_es: 'Temperaturas en tiempo real por ubicación',
-        demoLink: "https://weather-app-jordimartinez.netlify.app",
-        codeLink: "https://github.com/jordimartinezjimenez/weather-react-ts",
-        techs: [techStyles.React, techStyles.Zod]
-    },
-    {
-        id: 13,
+        id: 14,
         type: 'code',
         image: '/crypto-quoter-v2.webp',
         title: 'Crypto Quoter',
@@ -247,7 +283,7 @@ export const projects: Project[] = [
         techs: [techStyles.React, techStyles.Zustand, techStyles.Zod]
     },
     // {
-    //     id: 14,
+    //     id: 15,
     //     type: 'code',
     //     image: '/tip-calculator.webp',
     //     title: 'Tip Calculator',
